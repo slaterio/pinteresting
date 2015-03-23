@@ -14,3 +14,12 @@
  *= require_self
  *= require 'masonry/transitions'
  */
+
+body {
+	background-image: url("bg.jpg");
+    background-color: #faef6c;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+p.homeintro {font-size: 1.5em;}

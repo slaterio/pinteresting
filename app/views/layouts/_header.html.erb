@@ -8,7 +8,9 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <%= link_to "Pinteresting", root_path, class: "navbar-brand" %>
+              <%= link_to root_path do %>
+                <%= image_tag("logo.png", :alt => "Tap and Filter") %>
+              <% end %>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
@@ -16,11 +18,10 @@
 	      <ul class="nav navbar-nav navbar-right">
 	        <li><%= link_to "Home", root_path %></li>
 	        <li><%= link_to "About", about_path %></li>
-	        <li><%= link_to "Contact", contact_path %></li>
 	        <% if user_signed_in? %>
             <li>
               <%= link_to new_pin_path do %>
-                <span class="glyphicon glyphicon-plus"></span> New Pin
+                <span class="glyphicon glyphicon-plus"></span> Beer Me
               <% end %>
             </li>
 	        <li><%= link_to "Account settings", edit_user_registration_path %></li>
